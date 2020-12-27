@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.var/app/com.unity.UnityHub/cache/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.var/app/com.unity.UnityHub/cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_DrEMFirebase.-1546138672.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="DrEMFirebase.sln" t="IncludeFlat" />
+      <e p="Unity.CollabProxy.Editor.csproj" t="IncludeRecursive" />
+      <e p="Unity.Rider.Editor.csproj" t="IncludeRecursive" />
+      <e p="Unity.TextMeshPro.Editor.csproj" t="IncludeRecursive" />
+      <e p="Unity.TextMeshPro.csproj" t="IncludeRecursive" />
+      <e p="Unity.Timeline.Editor.csproj" t="IncludeRecursive" />
+      <e p="Unity.Timeline.csproj" t="IncludeRecursive" />
+      <e p="Unity.VSCode.Editor.csproj" t="IncludeRecursive" />
+      <e p="UnityEditor.TestRunner.csproj" t="IncludeRecursive" />
+      <e p="UnityEditor.UI.csproj" t="IncludeRecursive" />
+      <e p="UnityEngine.TestRunner.csproj" t="IncludeRecursive" />
+      <e p="UnityEngine.UI.csproj" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>
