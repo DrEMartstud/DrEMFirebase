@@ -25,7 +25,7 @@ namespace UI {
         }
         
         private void OnEnable() {
-            _welcomeMessageStringValue.text = $"Welcome, {_parsedLogin.value}!";
+            _welcomeMessageStringValue.text = $"Добро пожаловать, {_parsedLogin.value}!";
         }
 
         private void OnDisable() {

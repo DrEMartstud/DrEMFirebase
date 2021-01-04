@@ -64,7 +64,7 @@ namespace Game {
                 _loggedInEventDispatcher.Dispatch();
                 yield break;
             }
-            _errorMessageStringValue.value = "Wrong login or password!";
+            _errorMessageStringValue.value = "Неправильный логин или пароль!";
             _unsuccessfulLogInEventDispatcher.Dispatch();
         }
         
