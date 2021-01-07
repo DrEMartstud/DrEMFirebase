@@ -98,8 +98,8 @@ namespace Game {
         
         private void RegisterUsers() {
             RegisterUser("admin", "admin");
-            RegisterUser("Sergey", "12345");
-            RegisterUser("Yuri", "12345");
+            RegisterUser("Сергей", "12345");
+            RegisterUser("Юрий", "12345");
         }
         
         private void RegisterUser(string newLogin, string newPassword) {
