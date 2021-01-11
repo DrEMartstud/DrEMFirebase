@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "\u0418\u0434\u0435\u043D"
   m_EditorClassIdentifier: Assembly-CSharp:Game:ScriptablePermisionValue
   fileName: "\u0418\u0434\u0435\u043D"
-  iconImage: {fileID: 21300000, guid: 3c06bb06660322ef9a0a41b287c5d451, type: 3}
+  iconImage: {fileID: 21300000, guid: a6b9b4ea5cf250144aeda9fc3b5fb40b, type: 3}
   Users:
   - userName: "\u042E\u0440\u0438\u0439"
     read: 1
