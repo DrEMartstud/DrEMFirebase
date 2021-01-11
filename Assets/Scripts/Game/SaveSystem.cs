@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
@@ -48,7 +48,6 @@ namespace Game {
         }
 
         private void OnEnable() {
-            RegisterUsers();
             _registerUserEventListener.OnEventHappened += OnUserRegistered;
         }
 
@@ -57,15 +56,7 @@ namespace Game {
         }
 
         private void OnUserRegistered() {
-            var newRecord = new SaveData {
-                login = _parsedLogin.value,
-                password = _parsedPassword.value
-            };
-               
-            _saveDatas.Add(newRecord);
-
-            SaveToFile();
-
+            RegisterUser(_parsedLogin.value, _parsedPassword.value);
             _userRegisteredEventDispatcher.Dispatch();
         }
 
@@ -78,6 +69,7 @@ namespace Game {
 
         private void LoadFromFile() {
             if (!File.Exists(_filePath)) {
+                PreRegisterUsers();
                 return;
             }
 
@@ -96,7 +88,7 @@ namespace Game {
             }
         }
         
-        private void RegisterUsers() {
+        private void PreRegisterUsers() {
             RegisterUser("admin", "admin");
             RegisterUser("Сергей", "12345");
             RegisterUser("Юрий", "12345");
@@ -107,13 +99,13 @@ namespace Game {
                 login = newLogin.ToLower(), 
                 password = newPassword
             };
-            var found = SavedDatas.Find(login=> login.login == newLogin);
-            if (found != null) {
-                Debug.Log("User already exists");
+            
+            var foundUser = _saveDatas.Find(log=> log.login == user.login);
+            if (foundUser != null) {
+                Debug.Log(foundUser.login);
+                return;
             }
-            else {
-                _saveDatas.Add(user);
-            }
+            _saveDatas.Add(user);
             SaveToFile();
         }
     }
